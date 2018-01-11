@@ -14,3 +14,9 @@ print(Var)
 hello_world = 'Hello World'
 print(hello_world)
 
+
+# 定数
+"""
+定数は値が変えられない変数
+Pythonに定数はないため、定数のような意図を持って定義する場合には、すべて大文字で変数名を定義する
+"""
