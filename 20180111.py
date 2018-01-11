@@ -56,3 +56,20 @@ print(type(suu)) # <class 'int'>
 
 string = 'Hello'
 print(type(string)) # <class 'str'>
+
+
+# 型変換(キャスト)
+"""
+データ型の異なる文字列と数値を連結しようとするとエラーになる
+エラーを回避するにはデータ型を変える。これを型変換(キャスト)という
+"""
+name = 'Tom'
+age = 24
+# int型をstr型に変換
+print('My name is ' + name + 'My age is ' + str(age)) # My name is TomMy age is 24
+
+strig_price = '1000'
+price = 500
+# str型をint型に変換
+total_price = int(strig_price) + price
+print(total_price) # 1500
