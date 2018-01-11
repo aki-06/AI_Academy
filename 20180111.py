@@ -39,3 +39,20 @@ x = 5
 print(x) # 5
 x = 'Python'
 print(x) # Python
+
+
+# データ型
+"""
+'Hello' 文字列型(str)
+10 数値型(int)
+データ型が異なるとプログラムは異なる動作をする
+"""
+print(10 + 5) # 15
+print('10' + '5') #105
+
+# type()でデータ型を出力する
+suu = 5
+print(type(suu)) # <class 'int'>
+
+string = 'Hello'
+print(type(string)) # <class 'str'>
