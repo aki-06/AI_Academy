@@ -21,6 +21,7 @@ print(hello_world)
 Pythonに定数はないため、定数のような意図を持って定義する場合には、すべて大文字で変数名を定義する
 """
 
+
 # 予約後
 """
 関数名や変数名に使用できない単語
@@ -28,3 +29,13 @@ Pythonに定数はないため、定数のような意図を持って定義す�
 """
 print(__import__('keyword').kwlist) # 予約語一覧を出力
 # ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+# 変数と型
+"""
+Pythonの変数には型宣言がないため、変数にどのような型でも入れることができる
+"""
+x = 5
+print(x) # 5
+x = 'Python'
+print(x) # Python
