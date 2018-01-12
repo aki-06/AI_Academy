@@ -29,3 +29,14 @@ print(10 ** 3) # 1000
 """
 print(5 // 2) # 2
 print(5 / 2) # 2.5
+
+
+## 文字列
+print('I love ' + 'Python') # I love Python
+print('Hello' * 3) # HelloHelloHello
+print('I say ' + ('hello' * 3)) # I say hellohellohello
+
+x = 'I'
+y = 'love'
+z = 'Python'
+print(x + y + z) # IlovePython
