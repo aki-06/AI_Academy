@@ -34,3 +34,26 @@ print(sep) # ['ABC', 'DEF', 'GHI']
 lists = ['A', 'B', 'C', 'D', 'E']
 lists.insert(1, 'Z')
 print(lists) # ['A', 'Z', 'B', 'C', 'D', 'E']
+
+
+# リストのコピーの種類
+li1 = [1, 2, 3]
+li2 = li1
+print(li1) # [1, 2, 3]
+print(li2) # [1, 2, 3]
+
+li1[2] = 10
+print(li1) # [1, 2, 10]
+print(li2) # [1, 2, 10]
+
+# deepcopy()メソッド
+
+import copy
+li1 = [1, 2, 3]
+li2 = copy.deepcopy(li1)
+print(li1) # [1, 2, 3]
+print(li2) # [1, 2, 3]
+
+li1[2] = 10
+print(li1) # [1, 2, 10]
+print(li2) # [1, 2, 3]
