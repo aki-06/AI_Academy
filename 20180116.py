@@ -80,3 +80,23 @@ b = list(a)
 print(b) # [1, 2, 3]
 c = tuple(b)
 print(c) # (1, 2, 3)
+
+
+# セット集合型
+"""
+setは順序は保持せず、ユニークなオブジェクトのグループを保持する
+格納するオブジェクトは問わないが、リストは追加できない
+"""
+
+# セットの操作
+x = {1, 2, 'ab'}
+x.add(3)
+print(x) # {1, 2, 3, 'ab'}
+# removeは指定されたオブジェクトがあればsetから取り除く。なければエラー。
+x.remove(3)
+print(x) # {1, 2, 'ab'}
+# discardは要素があった場合だけ取り除く。
+x.discard(2)
+print(x) # {1, 'ab'}
+x.discard('python')
+print(x) # {1, 'ab'}
