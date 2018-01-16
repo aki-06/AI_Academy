@@ -100,3 +100,17 @@ x.discard(2)
 print(x) # {1, 'ab'}
 x.discard('python')
 print(x) # {1, 'ab'}
+
+
+# イテレーション
+"""
+リストや辞書から要素を一つずつ取り出せる
+順序は保持されない
+"""
+s = {1, 2, 'a', 'b'}
+for i in s:
+	print(i)
+# a
+# 1
+# 2
+# b
