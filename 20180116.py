@@ -73,3 +73,10 @@ print(ai_a) # ('ai', 'academy', 2018)
 t = (2, 5, 8)
 print(len(t)) # 3
 print(t * 3) # (2, 5, 8, 2, 5, 8, 2, 5, 8)
+
+# タプルとリストの変更
+a = (1, 2, 3)
+b = list(a)
+print(b) # [1, 2, 3]
+c = tuple(b)
+print(c) # (1, 2, 3)
