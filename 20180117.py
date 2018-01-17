@@ -71,3 +71,22 @@ for i in d:
 # k1
 # k2
 # k3
+
+
+# キーと値はdel文で削除可能
+"""
+delは値を返さない
+popは値を返す
+"""
+d = {'k1': 'v1', 'k2': 'v2', 'k3': 'v3'}
+d['k4'] = 'v4'
+print(d) # {'k1': 'v1', 'k2': 'v2', 'k3': 'v3', 'k4': 'v4'}
+
+d = [1, 2, 3, 4, 5]
+del d[1]
+print(d) # [1, 3, 4, 5]
+deleted = d.pop(2)
+print(deleted) # 4
+print(d) # [1, 3, 5]
+del d[0:2]
+print(d) # [5]
