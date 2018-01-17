@@ -54,3 +54,10 @@ print(dic.get('sato', 19)) # 19
 
 # 元の辞書に影響はない
 print(dic) # {'nemoto': 27, 'tanaka': 29, 'yamada': 30}
+
+
+# インデックスのアクセス
+d = {'k1': 'v1', 'k2': 'v2', 'k3': 'v3'}
+print(d['k1']) # v1
+print('k1' in d) # True
+print('k4' in d) # False
