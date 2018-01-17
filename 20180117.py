@@ -61,3 +61,13 @@ d = {'k1': 'v1', 'k2': 'v2', 'k3': 'v3'}
 print(d['k1']) # v1
 print('k1' in d) # True
 print('k4' in d) # False
+
+
+# 辞書型のイテレーションアクセス
+d = {'k1': 'v1', 'k2': 'v2', 'k3': 'v3'}
+for i in d:
+	print(i)
+
+# k1
+# k2
+# k3
