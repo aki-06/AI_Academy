@@ -161,3 +161,10 @@ go = [3, 2, 1, 'GO!']
 for g in go:
 	print(g)
 
+# 演習問題2
+l = []
+for i in range(1, 101):
+	if i % 2 == 0:
+		l.append(i)
+
+print(l)
