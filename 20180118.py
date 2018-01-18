@@ -47,3 +47,75 @@ elif score >= 80:
 	print('合格')
 else:
 	print('不合格')
+
+
+# ループ
+# for文
+"""
+for ループ内変数 in リスト名:
+	処理
+"""
+for i in ['apple', 'banana', 'melon']:
+	print(i)
+
+# apple
+# banana
+# melon
+
+"""
+forで一定回数の処理をするには、range()関数を使う
+range(x)...0からx-1回
+range(x, y)...xからy-1回
+"""
+for i in range(10):
+	print(i)
+
+data = [10, 20, 30, 40]
+for d in data:
+	print(d)
+
+sum_d = 0
+for d in data:
+	sum_d += d
+
+print(sum_d)
+
+"""
+elseを使うとループが終了したら処理が実行される
+"""
+sum_d = 0
+for d in data:
+	sum_d += d
+else:
+	print(sum_d)
+
+# continue...一回スキップ
+for i in range(10):
+	if i == 3:
+		continue
+	print(i) # 3がスキップされる
+
+# break...処理が終了
+for i in range(10):
+	if i == 3:
+		break
+	print(i) # 2までしか表示されない
+
+
+f = [1, 2, 3, 4, 5]
+for i in f:
+	if i == 4:
+		print('found')
+		break
+else:
+	print('not found')
+
+
+for s in 'Hello':
+	print(s)
+
+"""
+インデックス番号も欲しい時はenumerate()を使う
+"""
+for index, name in enumerate(['apple', 'banana', 'melon']):
+	print(index, name)
