@@ -136,3 +136,10 @@ while a < n:
 	print(a, end=' ')
 	a, b = b, a + b
 print()
+
+# リスト内包表記
+"""
+既存のリストやジェネレータから新しいリストを作成
+"""
+result = [x**2 for x in range(1, 11)]
+print(result)
