@@ -128,3 +128,11 @@ n = 0
 while n < 10:
 	print(n)
 	n += 1
+
+# フィボナッチ級数を実装してみよう
+n = 100
+a, b = 0, 1
+while a < n:
+	print(a, end=' ')
+	a, b = b, a + b
+print()
