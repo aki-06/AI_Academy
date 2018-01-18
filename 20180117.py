@@ -90,3 +90,4 @@ print(deleted) # 4
 print(d) # [1, 3, 5]
 del d[0:2]
 print(d) # [5]
+
