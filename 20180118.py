@@ -119,3 +119,12 @@ for s in 'Hello':
 """
 for index, name in enumerate(['apple', 'banana', 'melon']):
 	print(index, name)
+
+# while文
+"""
+特定条件を満たすまで繰り返す
+"""
+n = 0
+while n < 10:
+	print(n)
+	n += 1
