@@ -18,3 +18,12 @@ def hello():
 # 関数の呼び出し
 hello() # hello
 
+
+# 関数名
+"""
+小文字で定義する
+単語二文字以上で関数名を定義する時は「_」でつなぐ
+予約語、組み込み関数と名前が被らないようにする
+"""
+def lowercase_underscore():
+	print('lowercase_underscore')
