@@ -40,3 +40,11 @@ def test():
 	print('test')
 
 test() # test
+
+
+# pass
+"""
+関数を定義するが処理は何もしない
+"""
+def test():
+	pass
