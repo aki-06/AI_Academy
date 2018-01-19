@@ -61,3 +61,17 @@ def add(a, b):
 	return a + b
 
 print(add(2, 4))
+
+
+# 関数のサンプル
+def power(x):
+	return x * x
+
+def absolute(x):
+	if x < 0:
+		return -x
+	else:
+		return x
+
+print(power(10))
+print(absolute(-10))
