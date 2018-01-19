@@ -27,3 +27,16 @@ hello() # hello
 """
 def lowercase_underscore():
 	print('lowercase_underscore')
+
+
+# 引数
+"""
+関数を呼び出すときに関数に与える値
+仮引数...関数の定義側で受け取る値
+実引数...関数の呼び出し側で与える値
+"""
+
+def test():
+	print('test')
+
+test() # test
