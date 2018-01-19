@@ -48,3 +48,16 @@ test() # test
 """
 def test():
 	pass
+
+
+# 引数とリターン
+"""
+returnを実行すると、関数を終了し、呼び出し元に戻る
+def 関数名(引数):
+	処理
+	return 返り値
+"""
+def add(a, b):
+	return a + b
+
+print(add(2, 4))
