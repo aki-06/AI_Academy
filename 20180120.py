@@ -62,3 +62,24 @@ def sample2(**args):
 	print(args)
 
 sample2(name='nemoto', age=27, job='engineer') # {'name': 'nemoto', 'age': 27, 'job': 'engineer'}
+
+
+# グローバル(global)宣言
+"""
+ローカル変数（関数定義の内部で定義した変数）
+グローバル変数（関数定義の外部で定義した変数）
+"""
+glb = 0
+
+def func1():
+	glb = 1
+
+def func2():
+	global glb
+	glb = 5
+
+print(glb) # 0
+func1()
+print(glb) # 0
+func2()
+print(glb) # 5
