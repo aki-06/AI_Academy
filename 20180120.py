@@ -104,3 +104,44 @@ def sample4():
 	return(var1, var2)
 
 print(sample4()) # ('ローカル', 'ローカル')
+
+
+# よく利用される標準関数
+"""
+zip()
+引数に渡したそれぞれのリストは、要素をタブルでまとめたリストで返される
+"""
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+z = zip(a, b)
+print(z) # <zip object at 0x104515348>
+print(list(z)) # [(1, 4), (2, 5), (3, 6)]
+
+questions = ['name', 'favorite food']
+answers = ['nemoto', 'sushi']
+
+for q, a in zip(questions, answers):
+	print('what is your {0}? it is {1}'.format(q, a))
+	# what is your name? it is nemoto
+	# what is your favorite food? it is sushi
+
+"""
+map()
+リストの要素に演算を適用する
+"""
+def square(x):
+	return x * x
+
+li = list(map(square, range(1, 10)))
+print(li) # [1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+"""
+filter()
+リストの要素を抽出する
+"""
+def is_mod(x):
+	return x % 3 == 1
+
+li = list(filter(is_mod, range(1, 10)))
+print(li) # [1, 4, 7]
