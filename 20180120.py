@@ -83,3 +83,24 @@ func1()
 print(glb) # 0
 func2()
 print(glb) # 5
+
+
+# 関数 変数のスコープ
+var1 = 'グローバル変数'
+
+def sample3():
+	var2 = 'ローカル変数'
+	return (var1, var2)
+
+print(sample3()) # ('グローバル変数', 'ローカル変数')
+
+
+var1 = 'グローバル'
+
+def sample4():
+	global var1
+	var1 = 'ローカル'
+	var2 = 'ローカル'
+	return(var1, var2)
+
+print(sample4()) # ('ローカル', 'ローカル')
