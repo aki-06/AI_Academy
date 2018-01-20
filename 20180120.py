@@ -168,3 +168,21 @@ def factrial(i):
 		return i * factrial(i - 1)
 
 print(factrial(4))
+
+
+# 無名関数
+"""
+名前のない関数
+lambdaを使う
+変数 = lambda 引数1,引数2:式
+"""
+# iを2倍にする無名関数
+sample = lambda i: i * 2
+print(sample(10)) # 20
+print(sample(100)) # 200
+
+
+def sample5(func):
+	return func(10)
+
+print(sample5(lambda i:i * 2)) # 20
