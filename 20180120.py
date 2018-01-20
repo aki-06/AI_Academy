@@ -145,3 +145,26 @@ def is_mod(x):
 
 li = list(filter(is_mod, range(1, 10)))
 print(li) # [1, 4, 7]
+
+
+# 再帰関数
+"""
+自分自身を呼び出す関数
+"""
+def count_down(i):
+	print(i)
+	if i > 0:
+		count_down(i-1)
+	else:
+		return
+
+count_down(10)
+
+
+def factrial(i):
+	if i == 0:
+		return 1
+	else:
+		return i * factrial(i - 1)
+
+print(factrial(4))
