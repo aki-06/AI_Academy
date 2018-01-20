@@ -186,3 +186,13 @@ def sample5(func):
 	return func(10)
 
 print(sample5(lambda i:i * 2)) # 20
+
+
+# 関数の引数に関数を渡す
+def a():
+	return 10
+
+def b(a_var):
+	print(a_var + a_var)
+
+b(a_var = a()) # 20
