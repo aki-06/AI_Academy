@@ -20,3 +20,19 @@ def sample(arg):
 
 sample('python')
 sample('Python')
+
+
+# 名前付き引数の指定
+"""
+引数を指定するときに、引数の名前を指定して関数を呼び出すことができる
+キーワード引数ともいう
+"""
+def height_and_weight(height, weight):
+	print('身長は' + str(height) + 'cmです')
+	print('体重は' + str(weight) + 'kgです')
+
+# 引数の名前を指定する
+height_and_weight(height=170, weight=60)
+# 身長は170cmです
+# 体重は60kgです
+
