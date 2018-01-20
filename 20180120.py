@@ -36,3 +36,29 @@ height_and_weight(height=170, weight=60)
 # 身長は170cmです
 # 体重は60kgです
 
+
+# 関数における引数の * と **
+"""
+仮引数（関数定義側）に*を使うと、可変個の位置引数をタプルにまとめる
+**を使うと、キーワード引数が辞書にまとめる
+*と**を併用する場合には*を先に書く
+"""
+
+def sample1(*args):
+	print(args)
+
+sample1(1, 2, 3, 'Python') # (1, 2, 3, 'Python')
+
+# *で定義した仮引数よりも後ろはキーワード引数としてのみ使える
+
+def concat(*args, sep='/'):
+	return sep.join(args)
+
+print(concat('a', 'b', 'c')) # a/b/c
+print(concat('a', 'b', 'c', sep='|')) # a|b|c
+
+
+def sample2(**args):
+	print(args)
+
+sample2(name='nemoto', age=27, job='engineer') # {'name': 'nemoto', 'age': 27, 'job': 'engineer'}
