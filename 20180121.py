@@ -29,3 +29,23 @@ print(sample.name) # A
 print(sample2.name) # B
 
 print(type(sample2)) # <class '__main__.SampleClass'>
+
+
+# コンストラクタ
+"""
+インスタンスを作成するときに初期値を与える
+インスタンスが作成されるときに一度だけ呼ばれる
+"""
+class User:
+	def __init__(self, name):
+		self.name = name
+		print('コンストラクタが呼ばれました')
+
+	def hello(self):
+		print('Hello, ' + self.name)
+
+user = User('sample user') # コンストラクタが呼ばれました
+py = User('Python') # コンストラクタが呼ばれました
+
+user.hello() # Hello, sample user
+py.hello() # Hello, Python
