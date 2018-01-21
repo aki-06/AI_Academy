@@ -113,3 +113,34 @@ class SuperUser(User):
 
 a = SuperUser('nemoto', 27)
 a.hello() # Hello, SuperUsernemoto
+
+
+# 例外
+"""
+プログラムがある処理を実行している途中で、何らかの異常が発生した場合に、
+現在の処理を中断し、別の処理を行うこと
+"""
+# 例外処理の構文
+"""
+try:
+	バグがありそうなプログラム
+except:
+	バグが起きた時の処理
+"""
+
+# 例外オブジェクトを捕捉する
+try:
+	# バグ1
+	i = input()
+	input_num = int(i)
+	result = 5 / input_num
+	print(result)
+
+	# バグ2
+	a = 'a'
+	b = 5
+	print(a + b)
+
+except(TypeError, ZeroDivisionError, KeyError) as e:
+	print(type(e))
+
