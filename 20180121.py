@@ -66,3 +66,24 @@ class SampleClass2:
 sample2 = SampleClass2()
 sample2.set_name('nemoto')
 sample2.hello() # Hello, nemoto
+
+
+# メソッドのオーバライド
+"""
+オーバーライド,,,独自の機能で上書きすること
+"""
+# 基底クラス
+class Base:
+	def sample(self):
+		print('Base.sample()が呼ばれました')
+
+	def test(self):
+		print('Base.test()が呼ばれました')
+
+# 派生クラス
+class Derived:
+	def test(self):
+		print('Derived.test()が呼ばれました')
+
+d = Derived()
+d.test() # Derived.test()が呼ばれました
