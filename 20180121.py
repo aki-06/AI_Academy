@@ -49,3 +49,20 @@ py = User('Python') # コンストラクタが呼ばれました
 
 user.hello() # Hello, sample user
 py.hello() # Hello, Python
+
+
+# メソッドとプロパティ
+"""
+メソッド...クラスに定義した関数
+プロパティ...属性に直接アクセスすることなく、何らかの処理を行い、属性にアクセスする仕組み。@propertyを使う
+"""
+class SampleClass2:
+	def set_name(self, x):
+		self.name = x
+
+	def hello(self):
+		print('Hello, {0}'.format(self.name))
+
+sample2 = SampleClass2()
+sample2.set_name('nemoto')
+sample2.hello() # Hello, nemoto
