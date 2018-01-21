@@ -87,3 +87,29 @@ class Derived:
 
 d = Derived()
 d.test() # Derived.test()が呼ばれました
+
+
+# 継承
+"""
+既存のクラスを元に新しいクラスを作る仕組み
+"""
+class User:
+	def __init__(self, name):
+		self.name = name
+
+	def hello(self):
+		print('Hello, ' + self.name)
+
+class SuperUser(User):
+	def __init__(self, name, age):
+		# super()を使うと親クラスのメソッドを呼び出せる
+		super().__init__(name)
+		self.age = age
+
+	# メソッドのオーバーライド
+	def hello(self):
+		print('Hello, SuperUser' + self.name)
+		super().hello() # Hello, nemoto
+
+a = SuperUser('nemoto', 27)
+a.hello() # Hello, SuperUsernemoto
