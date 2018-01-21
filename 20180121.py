@@ -144,3 +144,15 @@ try:
 except(TypeError, ZeroDivisionError, KeyError) as e:
 	print(type(e))
 
+
+# else/finally
+try:
+	print('処理')
+except KeyError as e:
+	print('KeyError')
+except ZeroDivisionError as e:
+	print('ZeroDivisionError')
+else:
+	print('問題はありません')
+finally:
+	print('処理2')
