@@ -23,3 +23,12 @@ f.close()
 fileobj = open('test.txt', 'r')
 print(fileobj.read())
 fileobj.close()
+
+
+# 例外処理と合わせて使う
+sample_file = open('sample.txt', 'a')
+try:
+	sample_file.write('sample01\n')
+	sample_file.write('sample02')
+finally:
+	sample_file.close()
