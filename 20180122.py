@@ -32,3 +32,14 @@ try:
 	sample_file.write('sample02')
 finally:
 	sample_file.close()
+
+
+# with構文
+"""
+with構文を使うことで、try、finallyを使うことなくclose()処理がされる
+
+with open('ファイル名', 'モード') as 変数名:
+	処理
+"""
+with open('sample.txt', 'a') as f:
+	f.write('sample03')
