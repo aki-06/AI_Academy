@@ -17,3 +17,9 @@ readlines()...すべての行をリストとして読み込み
 f = open('test.txt', 'w')
 f.write('hello')
 f.close()
+
+
+# ファイルを読み込んで見よう
+fileobj = open('test.txt', 'r')
+print(fileobj.read())
+fileobj.close()
